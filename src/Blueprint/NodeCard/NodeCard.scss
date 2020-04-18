@@ -1,0 +1,19 @@
+
+.node-card {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  .node-card__label {
+    padding-top: 10px;
+  }
+  .node-card__description {
+    padding-top: 10px;
+  }
+  .node-card__form {
+    padding-top: 10px;
+  }
+  .node-card__button{
+    margin: 20px;
+    margin-right: 10px;
+    float: right;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { IQuestion, ITopic, IConclusion, IOption } from "../typings";
-import { Node } from "./Node";
+import { NodeCard } from "../NodeCard/NodeCard";
 
 interface INodeListProps {
   nodes: Array<IQuestion | ITopic | IConclusion>;
@@ -19,7 +19,7 @@ export function NodeList(props: INodeListProps) {
     >
       {props.nodes.map(node => {
         return (
-          <Node
+          <NodeCard
             key={node.id}
             node={node}
             onOptionChange={props.onOptionChange}

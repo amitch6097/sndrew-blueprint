@@ -11,7 +11,8 @@ interface IBlueprintProps {
   onOptionChange: (option: IOption) => (event: any) => void;
 }
 
-const scrollToNode = ({id}: Nodes) => (event: any) => window.scrollTo(0, document.getElementById(id)?.offsetTop || 0);
+const scrollToNode = ({id}: Nodes) => (event: any) => window.scrollTo({top: document.getElementById(id)?.offsetTop || 0,   behavior: 'smooth',
+});
 
 export function Blueprint(props: IBlueprintProps) {
   return (
